@@ -1,0 +1,295 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+.container{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.header{
+    width: 100%;
+    height: 120px;
+    min-height: 20px;
+    background-color: rgb(253, 250, 250);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 5px 15px;
+    position: fixed;
+}
+
+h1{
+    color: rgb(5, 5, 5);
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 50px;
+    
+}
+
+.logoNavBar{
+    width: 130px;
+    padding: 10px;
+}
+
+.headerBtnGroup{
+    display: flex;
+    gap: 15px ;
+
+}
+.navBtn{
+    font-size: 18px;
+    font-style:oblique;
+    text-decoration: none;
+    padding: 6px;
+    background-color: transparent;
+    border: 2px solid transparent;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    transition: 0.4s;
+}
+.navBtn:hover{
+    border-bottom: 2px solid rgb(177, 22, 22);
+    color: blue;
+}
+.sectionTitle{
+    color: rgb(248, 250, 252);
+    font-size: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding-top: 180px; 
+    font-size: 30px;
+    text-shadow: 1px 2px 4px rgb(0, 0, 0);
+    margin: 30px;
+
+}
+.sectionDescription{
+    text-align: center;
+    color: rgb(30, 71, 154);
+    padding: 10px;
+
+}
+.gridContainer{
+   display: grid; 
+   grid-template-columns: 5fr 1fr;
+   grid-template-areas: "mainContent sidebarContent";
+   padding: 10px;
+   flex: 1 0 auto;
+   
+}
+
+
+.mainContent{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    grid-area: mainContent;
+    padding-top: 1px;   
+}
+.mainContent1{
+    width: 300px;
+    height: 450px;
+    border-radius: 10px;
+    text-align: justify;
+   
+
+}
+.mainContent2{
+    width: 800px;
+    height: 450px;
+    border-radius: 10px;
+    text-align: justify;   
+
+}
+
+.sidebarCardImg{
+    width: 100%;
+    border-radius: 10px;
+    
+}
+.categoryCard{
+    width: 280px;
+    height: 420px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgb(0, 0, 0, 2), 0 6px 20px rgba(0, 0, 0, 19);
+}
+
+.categoryCard:hover{
+    border-color: black;
+
+}
+.mainCategoryCardTitle{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 6px;
+}
+.mainCategoryCardDescription{
+    padding: 6px;
+    text-align: justify;
+    font-size: 20px;
+    
+}
+.sidebarContent{
+    background-color: rgb(255, 254, 254);
+    color: rgb(0, 0, 0);
+    padding-top: 1px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 350px;
+    grid-area: sidebarContent;
+    
+  
+
+}
+.sidebarCard{
+    width: 60%;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgb(0, 0, 0, 2), 0 6px 20px rgba(0, 0, 0, 19);
+    margin: 5px;
+
+}
+
+.mainCardImg{
+    width: 100%;
+    height: 180px;
+    border-radius: 10px;
+    text-align: justify;
+    
+
+}
+.sidebarCardTitle{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 10px;
+}
+.sidebarCard:hover{
+    border-color: white;
+
+}
+
+.footer{
+    position: relative;
+    width: 100%;
+    min-height: 40px;
+    background-image: linear-gradient(rgb(255, 255, 255), white, black, black);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    gap: 15px;
+        
+    
+}
+
+.logoFooter{
+    width: 120px;
+
+}
+
+.face{
+    width: 10px;
+    cursor: pointer;
+    align-items: center;     
+}
+
+.rede{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+
+}
+.watSap{
+    width: 80px;
+    position: fixed;
+    padding-top: 10%;
+    bottom: 100px;
+    right: 2px;
+}   
+.footerAnchor{
+    color: white;
+    text-decoration: none;
+    padding: 60px;
+}
+
+.nome{
+    font-size: 30px;
+    padding: 10px;
+    color: rgb(3, 3, 3);
+    text-shadow: 2px 6px 8px rgb(226, 15, 15);
+    text-align: center;
+}
+
+.foto{
+    width: 250px;
+    height: 400px;
+    margin: 5px;
+    border-radius: 30px;
+    box-shadow: 0 4px 20px 0 rgb(0, 0, 0, 2), 0 6px 20px rgba(0, 0, 0, 19);
+}
+ .escrita{
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    text-align:justify;
+    color: rgb(0, 0, 0);
+    margin: 5px;
+    
+ }
+
+ .Videos{
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 130px;
+ }
+
+ @media(max-width: 600px) {
+  .gridContainer{
+    grid-template-areas: 
+      "mainContent"
+      "sidebarContent";
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+  }
+  .sidebarContent{
+    min-width: auto;
+  }
+  .footerAnchor{
+    font-size: 19px;
+  }
+  .sectionTitle{
+    padding-top: 250px;
+    
+  }
+
+}
+@media(max-width: 350px){
+    .header{
+        justify-content: center;
+    }
+    .footer{
+        justify-content: center;
+    }
+    .sectionTitle{
+        padding-top: 250px;      
+    }
+    h1{
+        font-size: 40px;
+    }
+
+  
+}
